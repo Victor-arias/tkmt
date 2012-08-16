@@ -38,8 +38,18 @@ class Tekemate extends CI_Controller {
 		$tv['content'] = $this->load->view('tekemate/servicios', false, true);
 		$tv['includes'][] = script_tag('js/servicios.js');
 		$this->load->view('template', $tv);
-	}//lo_que_hacemos
+	}//servicios
 	
+	public function galeria()
+	{
+		$tv['title'] = 'Galería';
+		$tv['keywords'] = 'Producción, realización, contenidos, diusión, audiovisual, video, fotografía, imágenes, herramientas de comunicación, locución, cubrimiento de eventos, medellín, imagen digital';
+		$tv['description'] = 'Creamos contenidos audiovisuales e informativos efectivos, llamativos, innovadores y eficaces, satisfaciendo la necesidad de difusión de todos nuestros clientes.';
+		$tv['content'] = $this->load->view('tekemate/galeria', false, true);
+		$tv['includes'][] = script_tag('js/servicios.js');
+		$this->load->view('template', $tv);
+	}//galeria
+
 	public function servicio()
 	{
 		

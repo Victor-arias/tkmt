@@ -105,14 +105,14 @@ transition: all 0.5s ease-in-out;
 #header{height: 275px; margin-top: 18px; position:relative; background: url(../images/logo_tekemate.png) no-repeat center top;}
 #header h1{ height: 214px;}
 #header h1 a{display: block;}
-#header ul, #social ul, #footer ul{overflow:hidden;list-style:none;}
+#social ul, #footer ul{overflow:hidden;list-style:none;}
 #header li, #social li, #footer li{float:left;}
 #header li a, #social li a, #footer li a{display:block;text-decoration:none;}
 
 #header #ojo{background: url(../images/bg_pupilla.png) no-repeat 84px 54px; height: 214px; width: 214px; margin: auto;}
 #header #ojo #pupilla0{background: url(../images/pupilla.png) no-repeat; height: 34px; width: 34px; }
 
-#header nav{width:340px;height:25px;margin:4px auto 0;}
+#header nav{width:425px;height:25px;margin:4px auto 0;}
 nav a{background: url(../images/eyes.png) no-repeat; color:#9B9B9B; padding:0 13px 0 30px;
 transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -120,10 +120,16 @@ transition: all 0.5s ease-in-out;
 -o-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
 }
+nav ul{list-style: none; position: relative;}
+nav li{display: block; position: relative;}
 nav li:first-child a{background: none; padding-left:0;}
 nav li:last-child a{padding-right:0;}
 nav li:nth-child(odd) a{background-position: bottom left;}
 nav li a:hover, nav .active a{color:#3F3F3F;}
+nav li > ul{display: none; visibility: hidden; position: absolute; top: 100%; left: 5px; z-index: 598; width: 100%;}
+nav li:hover > ul{display: block; visibility: visible;}
+nav li ul.submenu li{margin-top: 2px; width: 100%;}
+nav li ul.submenu li a{background-image: none; background-color: #39B2CF; color: #FFF; font-size: 0.9em; font-style: italic; padding: 5px; text-align: center;}
 
 .slogan{border-top: thin dotted #8C8C8C; border-bottom: thin dotted #8C8C8C; color: #8C8C8C; font-size: 1.5em; font-style:italic; letter-spacing: 13px; margin: 0 auto; padding: 3px 0 0; text-align: center; width: 560px;}
 
