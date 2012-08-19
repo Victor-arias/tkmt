@@ -86,7 +86,7 @@ class Tekemate extends CI_Controller {
 		$this->load->view('template', $tv);
 	}//fotografía
 
-	public function video()
+/*	public function video()
 	{
 		$tv['title'] = 'Vídeo';
 		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
@@ -95,7 +95,7 @@ class Tekemate extends CI_Controller {
 		$tv['includes'][] = script_tag('js/video.js');
 		$this->load->view('template', $tv);
 	}//galeria
-	
+	*/
 	public function videoxx()
 	{
 		//Inicializao la petición cURL
@@ -134,7 +134,7 @@ class Tekemate extends CI_Controller {
 		$this->load->view('template', $tv);
 	}//galeria
 	
-	public function video_v()
+	public function video()
 	{
 		//$this->load->driver('cache');
 		
@@ -182,7 +182,9 @@ class Tekemate extends CI_Controller {
 		$cv['videos'] = $final;
 		
 		$tv['title'] = 'Vídeo';
-		$tv['content'] = $this->load->view('tekemate/video2', $cv, true);
+		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
+		$tv['description'] = ' Te brindamos la oportunidad de trasmitir por medio de imágenes y audio el sentir de tu compañía con la capacidad de promocionarse por si mismo, con los más altos estándares de calidad y en diferentes formatos.';
+		$tv['content'] = $this->load->view('tekemate/video', $cv, true);
 		$tv['includes'][] = script_tag('js/video.js');
 		$this->load->view('template', $tv);
 	}//galeria

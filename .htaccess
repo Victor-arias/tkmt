@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 	Options +FollowSymLinks
-    RewriteBase /
+    RewriteBase /prueba/
 	
 	RewriteCond %{HTTP_HOST} !^www\.
 	RewriteRule (.*) http://www.tekemate.com/$1 [R=301,L] 

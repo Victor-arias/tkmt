@@ -11,7 +11,27 @@
         </ul>
     </div>
     <div id="main">
-      <iframe width="490" height="276" src="http://www.youtube.com/embed/BVa5ZMLsb6o" frameborder="0" allowfullscreen></iframe>
-        <p>Reel tekemate 2012</p>
+      <?php foreach($videos as $c):?>
+  <div class="categoria">
+      <h2><?php echo $c['list']->{'$t'} ?></h2>
+        <?php if($c['summary']->{'$t'} != ''):?> <p><?php echo $c['summary']->{'$t'} ?></p> <?php endif?>
+        <div class="videos">
+      <?php foreach($c['content'] as $v): ?>
+            <div class="video">
+            <a class="iframe" href="<?php echo $v['url'];?>"><img src="<?php echo $v['thumbnail']->url ?>" alt="<?php echo $v['title']->{'$t'} ?>" width="<?php echo $v['thumbnail']->width ?>" height="<?php echo $v['thumbnail']->height ?>"/></a>
+            <h3><?php echo $v['title']->{'$t'} ?></h3>
+            </div>
+      <?php endforeach?>
+        </div>
+    </div>
+<?php endforeach?>
+      
+      <?php //foreach($c['content'] as $v): ?>
+            <!--<div class="video">
+              <iframe width="490" height="276" src="<?php //echo $v['url'];?>" frameborder="0" allowfullscreen></iframe>
+            <p><?php //echo $v['title']->{'$t'} ?></p>
+            </div>-->
+      <?php //endforeach?>
+
     </div>
 </div>
