@@ -188,12 +188,12 @@ transition: all 0.5s ease-in-out;
 .servicio:nth-child(7){background-position: -1055px top;}
 .servicio:nth-child(8){background-position: -1231px top;}
 
-#fotografia, #video{border-top: thin dotted #8C8C8C; margin: 15px 0; overflow: hidden; padding: 15px 0;}
-#fotografia #sidebar, #video #sidebar{border: thin solid #888a89; float: left; padding: 5px; width: 175px;}
-#fotografia #sidebar h2, #video #sidebar h2{border: thin solid #888a89; color: #37b2d1; padding: 3px; text-transform: uppercase;}
-#fotografia #sidebar ul, #video #sidebar ul{border: thin solid #888a89; list-style: none; padding: 5px 3px;}
-#fotografia #sidebar ul li a, #video #sidebar ul li a{background: #39B2CF; color: #FFF; display: block; margin-bottom: 2px; padding: 2px; text-align: center; text-decoration: none;}
-#fotografia #main, #video #main{float: right; width: 570px;}
+.galeria{border-top: thin dotted #8C8C8C; margin: 15px 0; overflow: hidden; padding: 15px 0;}
+.galeria #sidebar{border: thin solid #888a89; float: left; padding: 5px; width: 175px;}
+.galeria #sidebar h2{border: thin solid #888a89; color: #37b2d1; padding: 3px; text-transform: uppercase;}
+.galeria#sidebar ul{border: thin solid #888a89; list-style: none; padding: 5px 3px;}
+.galeria #sidebar ul li a{background: #39B2CF; color: #FFF; display: block; margin-bottom: 2px; padding: 2px; text-align: center; text-decoration: none;}
+.galeria #main{float: right; width: 570px;}
 
 
 .fotos, .videos{overflow:hidden;}

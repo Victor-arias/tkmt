@@ -1,4 +1,4 @@
-<div id="fotografia">
+<div id="fotografia" class="galeria">
     <div id="sidebar">
         <h2>Fotografía</h2>
         <ul>

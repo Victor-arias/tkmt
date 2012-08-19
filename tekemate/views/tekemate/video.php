@@ -1,4 +1,4 @@
-<div id="video">
+<div id="video" class="galeria">
     <div id="sidebar">
         <h2>Vídeo</h2>
         <ul>
