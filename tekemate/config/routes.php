@@ -42,7 +42,9 @@ $route['default_controller'] = "tekemate";
 $route['404_override'] = '';
 
 $route['fotografia'] = "tekemate/fotografia";
+$route['fotografia/(:any)'] = "tekemate/fotografia";
 $route['video'] = "tekemate/video";
+$route['video/(:any)'] = "tekemate/video";
 $route['video_v'] = "tekemate/video_v";
 $route['video3'] = "tekemate/video3";
 $route['lo-que-hacemos'] = "tekemate/lo_que_hacemos";

@@ -107,7 +107,7 @@ jquery.mousewheel.min.js
 					padBot = $$.css('padding-bottom');
 					padBot = padBot.substring(0,padBot.length-2);
 					
-					params.taille_englobe = $(window).height()-40-padBot-padTop;
+					params.taille_englobe = $(window).height()-80-padBot-padTop;
 					
 				}else{return false}
 			}

@@ -4,9 +4,7 @@ $offset = 60 * 60 * 24 * 3;
 $ExpStr = "Expires: " . gmdate("D, d M Y H:i:s", time() + $offset) . " GMT";
 header($ExpStr);*/
 
-$cols = '';
-if(isset($sidebar)) $cols = 'rightmenu';
-else $cols = 'fullpage';
+if(!isset($sidebar)) $cols = 'fullpage';
 
 ?>
 <!DOCTYPE html>

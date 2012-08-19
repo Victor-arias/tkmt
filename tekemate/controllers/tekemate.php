@@ -85,8 +85,18 @@ class Tekemate extends CI_Controller {
 		$tv['includes'][] = script_tag('js/fotografia.js');
 		$this->load->view('template', $tv);
 	}//fotografía
-	
+
 	public function video()
+	{
+		$tv['title'] = 'Vídeo';
+		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
+		$tv['description'] = ' Te brindamos la oportunidad de trasmitir por medio de imágenes y audio el sentir de tu compañía con la capacidad de promocionarse por si mismo, con los más altos estándares de calidad y en diferentes formatos.';
+		$tv['content'] = $this->load->view('tekemate/video', false, true);
+		$tv['includes'][] = script_tag('js/video.js');
+		$this->load->view('template', $tv);
+	}//galeria
+	
+	public function videoxx()
 	{
 		//Inicializao la petición cURL
 		$c = curl_init('http://vimeo.com/api/v2/tekemate/videos.json'/*'http://gdata.youtube.com/feeds/api/users/tekemateid/uploads?v=2&alt=json'*/);
@@ -210,7 +220,7 @@ class Tekemate extends CI_Controller {
 		
 		$this->load->model('mcontacto');
 		$sv['contacto'] = $this->mcontacto->obtener_uno();
-		
+		//$sv['cols'] = 'rightmenu';
 		$this->load->helper('form');
 		
 		$tv['messages']	= $messages;		

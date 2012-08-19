@@ -188,6 +188,11 @@ transition: all 0.5s ease-in-out;
 .servicio:nth-child(7){background-position: -1055px top;}
 .servicio:nth-child(8){background-position: -1231px top;}
 
+#fotografia{border-top: thin dotted #8C8C8C; margin: 15px 0; overflow: hidden; padding: 15px 0;}
+#fotografia #sidebar{float: left; width: 175px;}
+#fotografia #main{float: right; width: 570px;}
+#fotografia h2{text-transform: uppercase;}
+
 .fotos, .videos{overflow:hidden;}
 .categorias .categoria{clear: both;float: right;left: -50%;position: relative;text-align: left;}
 .categorias .categoria .videos, .categorias .categoria h3{left: 50%;overflow: hidden;position: relative;}

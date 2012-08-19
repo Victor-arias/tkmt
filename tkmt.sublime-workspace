@@ -1,0 +1,178 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"backgro",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"selected_items":
+		[
+			[
+				"Install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 295.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/nav.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/config/routes.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/tekemate.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/fotografia.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/styles/style.css",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/video.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/servicio.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/contacto.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/template.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/inicio.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/js/libs/plugin.scrollbar.js",
+		"/F/Victor/Trabajo/Repositorios/tkmt/js/libs/plugin.scrollbar-min.js",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/_fotografia.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/galeria.php",
+		"/D/Victor/Descargas/free-css-drop-down-menu_v1.3/css/dropdown/dropdown.css",
+		"/D/Victor/Descargas/free-css-drop-down-menu_v1.3/css/helper.css",
+		"/F/Victor/Dropbox/Freelance/Tekua/VergaraVergara/Sitio/configuration.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/header.php",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"taille_englobe",
+			"visible",
+			"height",
+			"fotografia"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"video"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}
