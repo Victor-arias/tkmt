@@ -41,6 +41,7 @@
 $route['default_controller'] = "tekemate";
 $route['404_override'] = '';
 
+$route['asi-somos'] = "tekemate/asi_somos";
 $route['fotografia'] = "tekemate/fotografia";
 $route['fotografia/(:any)'] = "tekemate/fotografia";
 $route['video'] = "tekemate/video";

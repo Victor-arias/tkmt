@@ -164,7 +164,14 @@ em{font-style:normal; color:#90d7ff;}
 
 .col1 p.inicio{padding-top:15px;text-align:center;font-size:2em;}
 
-#servicios{border-top: thin dotted #8C8C8C; border-bottom: thin dotted #8C8C8C; overflow: hidden; padding-bottom:25px;}
+#asi-somos{padding-top: 20px;}
+#asi-somos h3{color: #37b2d1; font-size: 1.8em; padding: 3px; text-align: center; text-transform: uppercase;}
+#asi-somos > div{float: left; margin: 0 1%; width: 30%;}
+#asi-somos div:first-child, #asi-somos div:last-child{border: thin solid #666666; padding: 4px;}
+#asi-somos div:first-child > div, #asi-somos div:last-child > div{background: #FFF; border: thin solid #666666; padding: 10px;}
+
+
+#servicios, #asi-somos{border-top: thin dotted #8C8C8C; border-bottom: thin dotted #8C8C8C; overflow: hidden; padding-bottom:25px;}
 .fila{overflow:hidden;margin:25px 0;}
 .servicio{background: url(../images/servicios.png) no-repeat; position: relative; float:left;width:171px;height:180px;margin-top:35px; margin-right:34px;border:thin dotted #666666;padding:4px;text-align:center;}
 .servicio:nth-child(4n+4){margin-right:0;}
