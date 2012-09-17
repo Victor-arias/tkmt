@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Rockwell";
+  src: url('../fonts/Rock.eot');
+  src: local('☺'), url('../fonts/Rock.woff') format('woff'), url('../fonts/Rock.ttf') format('truetype'), url('../fonts/Rock.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rockwell Bold";
+  src: url('../fonts/Rockb.eot');
+  src: local('☺'), url('../fonts/Rockb.woff') format('woff'), url('../fonts/Rockb.ttf') format('truetype'), url('../fonts/Rockb.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rockwell Italic";
+  src: url('../fonts/Rocki.eot');
+  src: local('☺'), url('../fonts/Rocki.woff') format('woff'), url('../fonts/Rocki.ttf') format('truetype'), url('../fonts/Rocki.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { 
   margin: 0;
   padding: 0;
@@ -75,9 +96,9 @@ body, select, input, textarea {color: #333; }
 */
 h1, h2, h3, h4, h5, h6{color:#8C8C8C;}
 p{color: #666666;}
-body{margin:0; padding: 0; border:0; width:100%; min-width:700px;text-align:center;line-height:1.5;font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif; letter-spacing: 0.6px; background: url(../images/bg.jpg) repeat; font-size: 12px;}
+body{margin:0; padding: 0; border:0; width:100%; min-width:700px;text-align:center;line-height:1.5;font-family: "Rockwell", Courier, Georgia, Times, "Times New Roman", serif; letter-spacing: 0.6px; background: url(../images/bg.jpg) repeat; font-size: 12px;}
 
-#topbar{background: url(../images/topbar.png) no-repeat center top #fff; height: 30px; padding-top: 6px;}
+#topbar{background: url(../images/topbar.png) repeat-x center top #fff; height: 30px; padding-top: 6px;width: 100%;}
 #topbar .fixed{padding-top: 2px;}
 #topbar .contact{float:left; padding-top: 5px;}
 #topbar .email{color: #55B2D2;}
@@ -100,9 +121,9 @@ transition: all 0.5s ease-in-out;
 #social .youtube a{background-position:-103px 0;}
 #social a:hover{opacity:.6}
 
-#fixed, .fixed{clear:both; margin: auto; text-align:left; width:830px;}
+#fixed, .fixed{clear:both; margin: auto; text-align:left; width:840px;}
 
-#header{height: 275px; margin-top: 18px; position:relative; background: url(../images/logo_tekemate.png) no-repeat center top;}
+#header{height: 287px; margin-top: 18px; position:relative; background: url(../images/logo_tekemate.png) no-repeat center top;}
 #header h1{ height: 214px;}
 #header h1 a{display: block;}
 #social ul, #footer ul{overflow:hidden;list-style:none;}
@@ -112,7 +133,7 @@ transition: all 0.5s ease-in-out;
 #header #ojo{background: url(../images/bg_pupilla.png) no-repeat 84px 54px; height: 214px; width: 214px; margin: auto;}
 #header #ojo #pupilla0{background: url(../images/pupilla.png) no-repeat; height: 34px; width: 34px; }
 
-#header nav{width:425px;height:25px;margin:4px auto 0;}
+#header nav{width:485px;height:25px;margin:10px auto;font-size: 1.2em;}
 nav a{background: url(../images/eyes.png) no-repeat; color:#9B9B9B; padding:0 13px 0 30px;
 transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
@@ -152,7 +173,7 @@ h2{margin:0 0 .5em;text-align:center;font-size:1.8em;}
 
 #container h3{padding:10px 0;font-size:1.2em;}
 
-.descripcion{font-style: italic; font-size:1.25em; letter-spacing: 1.1px; text-align: center;}
+.descripcion{font-family: "Rockwell Italic", "Courier Italic", Courier, Georgia, Times, "Times New Roman", serif;font-style: italic; font-size:1.25em; letter-spacing: 1.1px; text-align: center;}
 #reel{border: thin dotted #8C8C8C; margin: 15px 0; padding: 15px 0;}
 #reel iframe{display: block; margin: auto;}
 
@@ -167,8 +188,8 @@ em{font-style:normal; color:#90d7ff;}
 #asi-somos{padding-top: 20px;}
 #asi-somos h3{color: #37b2d1; font-size: 1.8em; padding: 3px; text-align: center; text-transform: uppercase;}
 #asi-somos > div{float: left; margin: 0 1%; width: 30%;}
-#asi-somos div:first-child, #asi-somos div:last-child{border: thin solid #666666; padding: 4px;}
-#asi-somos div:first-child > div, #asi-somos div:last-child > div{background: #FFF; border: thin solid #666666; padding: 10px;}
+#asi-somos div:first-child, #asi-somos div:nth-child(2), #asi-somos div:last-child{border: thin solid #666666; height: auto; padding: 4px;}
+#asi-somos div:first-child > div, #asi-somos div:nth-child(2) > div, #asi-somos div:last-child > div{background: #FFF; border: thin solid #666666; height: 160px; padding: 10px;}
 
 
 #servicios, #asi-somos{border-top: thin dotted #8C8C8C; border-bottom: thin dotted #8C8C8C; overflow: hidden; padding-bottom:25px;}
@@ -177,7 +198,7 @@ em{font-style:normal; color:#90d7ff;}
 .servicio:nth-child(4n+4){margin-right:0;}
 .servicio a{display:block;width:171px;height:191px;text-decoration:none;}
 .servicio h3{position: absolute; width: 96%; height: 25px; bottom: 0;text-align:center;font-size:1.16em;text-transform: uppercase;}
-.servicio p{display:table-cell; opacity:0; width: 151px; height: 138px; padding: 10px; vertical-align:middle;text-align:left; background: #38B2CF; color: #FFF;
+.servicio p{display:table-cell; opacity:0; width: 151px; height: 117px; padding: 10px; vertical-align:middle;text-align:left; background: #38B2CF; color: #FFF;
 transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -webkit-transition: all 0.5s ease-in-out;
@@ -195,12 +216,13 @@ transition: all 0.5s ease-in-out;
 .servicio:nth-child(7){background-position: -1055px top;}
 .servicio:nth-child(8){background-position: -1231px top;}
 
-.galeria{border-top: thin dotted #8C8C8C; margin: 15px 0; overflow: hidden; padding: 15px 0;}
+.galeria{border: thin dotted #8C8C8C; margin: 15px 0; overflow: hidden; padding: 15px;}
 .galeria #sidebar{border: thin solid #888a89; float: left; padding: 5px; width: 175px;}
 .galeria #sidebar h2{border: thin solid #888a89; color: #37b2d1; padding: 3px; text-transform: uppercase;}
-.galeria#sidebar ul{border: thin solid #888a89; list-style: none; padding: 5px 3px;}
+.galeria #sidebar ul{border: thin solid #888a89; list-style: none; padding: 5px 3px;}
 .galeria #sidebar ul li a{background: #39B2CF; color: #FFF; display: block; margin-bottom: 2px; padding: 2px; text-align: center; text-decoration: none;}
-.galeria #main{float: right; width: 570px;}
+.galeria #sidebar ul li.active a{background: #009193;}
+.galeria #main{border-left:thin solid #8C8C8C;float: right; padding: 18px; width: 576px;}
 
 
 .fotos, .videos{overflow:hidden;}
@@ -209,17 +231,29 @@ transition: all 0.5s ease-in-out;
 .categorias .categoria h3{text-align:center;}
 .categorias .categoria .videos .video{float:left;}
 
-.foto, .video{/*clear:both;*/float:left;margin-bottom:30px;margin-left:10px;/*padding:10px;background:#00accf;*/background:none;}
+.foto, .video{float:left;margin-bottom:30px;margin-left:10px;background:none;text-align: center;;}
 .categoria p{margin: 10px auto 20px;text-align: center;width: 75%;}
-.video{width:200px;text-align:center;}
-.foto:nth-child(2n+1), .video:nth-child(n){padding-right:10px;/*background:#EFDC65;*/border-right:thin solid #eed988;}
-.video:nth-child(4n){padding-right:0;border:none;}
-.video:last-child{border:none;}
-/*.foto:nth-child(2n+1) h3{color:#00accf;}*/
-.foto h3, .video h3{margin:0;padding-bottom:0.5em;text-align:center;font-size:1em;color:#333;background:none;}
-.video h3{height:45px;}
-.video h3{font-size:.9em;}
-/*.foto ul{overflow:hidden;list-style:none;height:125px;padding:20px 10px;background:url(../images/film.png) repeat-x;}*/
+
+.videos,
+.fotos{margin-top:18px;overflow: hidden; width: 576px;}
+.video,
+.foto{margin:0;padding:0;width:576px;text-align:center;overflow: hidden;}
+
+.foto h3, 
+.video h3{margin:0;padding-bottom:0.5em;text-align:center;font-size:1em;color:#333;background:none;}
+.videos .inner, 
+.fotos .inner{position: relative;}
+.video .detalles, 
+.foto .detalles{margin-top: 25px; overflow: hidden;}
+.video .detalles h3, 
+.foto .detalles h3{background: #FFF; border: thin solid #8C8C8C; color: #666; float: left;font-size:.9em !important;font-style: italic;text-align:center;padding:5px 0 !important; width:525px;}
+.video .detalles a, 
+.foto .detalles a{background: url(../images/arrows.png) no-repeat; display:block; float: left; margin-top: 5px; text-indent: -9999px; width: 13px;}
+.video .detalles a:first-child, 
+.foto .detalles a:first-child{margin-right: 11px;}
+.video .detalles a:last-child, 
+.foto .detalles a:last-child{background-position: left -27px;margin-left: 11px;}
+
 .foto ul, .video ul{list-style:none;}
 
 .foto .jcarousel-container{width:370px;padding:0 20px;}
@@ -242,19 +276,20 @@ transition: all 0.5s ease-in-out;
 .foto a:hover, .video a:hover{opacity:1;}
 /*.foto img{}*/
 
-#contact_form {float: left; margin-left: 80px; margin-top: 25px; width: 450px;}
+#contact_form {float: left; margin-left: 80px; margin-top: 25px; width: 430px;}
 #contact_form form{padding:10px;}
 #contact_form form p{margin-bottom:10px;}
 #contact_form form label{display:block;margin-bottom: 5px;vertical-align:top;font-size:1.1em; color: #9B9B9B;}
-#contact_form form input{width:430px; height: 40px; border: thin solid #DDD;}
+#contact_form form input{width:410px; height: 40px; border: thin solid #DDD;}
 #contact_form form input.submit{display:block;width:90px;}
-#contact_form form textarea{width:430px; border: thin solid #DDD;}
+#contact_form form textarea{width:410px; border: thin solid #DDD;}
 
-#contact_data{background: #38B2CF; float:right; margin-right: 95px; margin-top: 50px; padding: 12px 10px; width: 140px;}
+#contact_data{background: #38B2CF; float:right; font-size: 1.1em; margin-right: 95px; margin-top: 50px; padding: 12px 10px; width: 190px;}
 #contact_data h4, #contact_data h3, #contact_data p, #contact_data a{color: #FFF; text-decoration: none;}
 #contact_data h4, #contact_data h3{font-weight: bold;}
 #contact_data h4{margin: 15px 0 10px;}
 #contact_data p{font-size: 0.91em;font-style: italic;}
+#contact_data a:hover{text-decoration: underline;}
 
 .blocks{overflow: hidden;}
 .blocks h2{border-bottom: thin dotted #8C8C8C; font-size: 1.41em; font-style: italic; font-weight: normal; letter-spacing: 2px; text-transform: uppercase; width: 200px; }
@@ -270,18 +305,21 @@ transition: all 0.5s ease-in-out;
 .recomendado h3, .recomendado p{clear: both;}
 .twitterwg{letter-spacing: normal;}
 
+
 .col2 p{text-align:center;font-size:14px;}
 .vcard div, .vcard span, .vcard a{display:block;text-align:center;font-size:1.2em;}
 
 .fn{display:block;}
 
+#twtr-widget-1{padding-top: 14px;}
 #twtr-widget-1 p{text-align:left;font-size:12px;}
 #twtr-widget-1 .twtr-hd{display:none;}
 
-#footer{background: url(../images/topbar.png) no-repeat center bottom #fff; height: 30px; margin-top: 50px; overflow:hidden; padding-bottom: 6px;}
-#footer .fixed{padding: 2px 0 2px;}
+#footer{background: url(../images/topbar.png) repeat-x center bottom #fff; height: 30px; margin-top: 50px; overflow:hidden; padding-bottom: 6px;}
+#footer .fixed{overflow:hidden; padding: 2px 0 2px;}
 #footer nav{overflow:hidden;float:left; padding-top: 5px;}
-#footer .ojo{width:26px;height:26px;margin-left:70px;float:left;background:url(../images/footer_eye.png) no-repeat;}
+#footer nav a{padding: 0 7px 0 20px;}
+#footer .ojo{width:26px;height:26px;margin-left:10px;float:left;background:url(../images/footer_eye.png) no-repeat;}
 #footer #info{color: #9B9B9B; float:right; padding-top: 5px;}
 #footer .locality{font-style: italic;}
 .copyright{width:960px;margin:15px auto;text-align:center;color:#666;}

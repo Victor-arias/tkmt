@@ -39,7 +39,7 @@ new TWTR.Widget({
 </div>
 
 <div class="recomendado">
-  <h2><span>Nuestro ojo</span></h2>
+  <h2><span>Nuestra mirada</span></h2>
   <h3><?php echo $recomendado->Nombre?></h3>
   <p>
     <iframe width="400" height="225" src="<?php echo $proveedor->Embed_URL?><?php echo $recomendado->Video_ID?>"><?php echo $recomendado->Nombre?></iframe>

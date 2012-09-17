@@ -2,17 +2,26 @@
     <div id="sidebar">
         <h2>Fotografía</h2>
         <ul>
-          <li><a href='<?php echo site_url('fotografia/moda-retrato-books') ?>' title='Moda. Retrato. Books.'>Moda. Retrato. Books.</a></li>
-          <li><a href='<?php echo site_url('fotografia/productos') ?>' title='Productos'>Productos</a></li>
-          <li><a href='<?php echo site_url('fotografia/publicidad') ?>' title='Publicidad'>Publicidad</a></li>
-          <li><a href='<?php echo site_url('fotografia/arquitectura') ?>' title='Arquitectura'>Arquitectura</a></li>
-          <li><a href='<?php echo site_url('fotografia/espacios-interiores') ?>' title='Espacios interiores'>Espacios interiores</a></li>
-          <li><a href='<?php echo site_url('fotografia/industrial') ?>' title='Industrial'>Industrial</a></li>
-          <li><a href='<?php echo site_url('fotografia/eventos') ?>' title='Eventos'>Eventos</a></li>
+          <?php foreach($albumes as $album): ?>
+          <li<?php if(current_url() == site_url('fotografia/'.$album->Alias)) echo ' class="active"';?>>
+            <a href="<?php echo site_url('fotografia/' . $album->Alias) ?>" title='<?php echo $album->Nombre?>'><?php echo $album->Nombre?></a>
+          </li>
+        <?php endforeach?>
         </ul>
     </div>
     <div id="main">
-      <img src="<?php echo base_url() ?>fotos/galeria/book-luisa-guevara/Book-Luisa-Guevara.jpg" alt="Book Luisa Guevara" />
-      <p>Book Luisa Guevara.</p>
+      <h2><?php echo $album_actual->Nombre ?></h2>
+        <div class="fotos">
+          <div class="inner">
+        <?php foreach($fotos as $foto): ?>
+            <div class="foto">
+              <img src="<?php echo base_url()?>fotos/galeria/<?php echo $foto->Alias?>/<?php echo $foto->Foto?>.jpg"></iframe>
+              <div class="detalles">
+                <a href="#" class="prev">Atras</a><h3><?php echo $foto->Nombre; ?></h3><a href="#" class="next">Adelante</a>
+              </div>
+            </div>
+        <?php endforeach?>
+          </div>
+        </div>
     </div>
 </div>

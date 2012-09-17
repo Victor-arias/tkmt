@@ -21,7 +21,10 @@
         <li>
             <a href="<?php echo site_url('administracion/fotografia');?>"><span>Fotografía</span></a>
             <ul>
-                <!--<li><a href="<?php echo site_url('administracion/servicios/agregar');?>"><span>Agregar</span></a></li>-->
+                <li><a href="<?php echo site_url('administracion/fotografia/listar_album');?>"><span>Listar álbumes</span></a></li>
+                <li><a href="<?php echo site_url('administracion/fotografia/agregar_album');?>"><span>Agregar albumes</span></a></li>
+                <li><a href="<?php echo site_url('administracion/fotografia/listar');?>"><span>Listar fotografías</span></a></li>
+                <li><a href="<?php echo site_url('administracion/fotografia/agrega');?>"><span>Agregar fotografías</span></a></li>
             </ul>
         </li>
        <li>

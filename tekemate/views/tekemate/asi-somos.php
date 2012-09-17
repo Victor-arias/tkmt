@@ -7,7 +7,10 @@
 </div>
 </div>
 <div>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus aliquam metus, vel congue eros porttitor vel. Praesent justo felis, tincidunt sit amet cursus eget, ultrices ac lectus. Aenean sit amet est risus, at eleifend nunc. Quisque non dapibus diam. Ut felis risus, eleifend et bibendum scelerisque, consequat eget ante. </p>
+	<div>
+	<p>Tekemate es una empresa especializada en producción y realización de contenidos audiovisuales e informativos, comprometidos a transmitir emociones por medio de imágenes.</p>
+<p>Nuestro propósito es ofrecer herramientas de comunicación que logren satisfacer las necesidades de nuestros clientes, brindándoles oportunidades de difusión, promoción, credibilidad, mejoramiento y posicionamiento de marca.</p>
+	</div>
 </div>
 <div id="vision">
 	<div>

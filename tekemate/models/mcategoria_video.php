@@ -57,6 +57,8 @@ class Mcategoria_video extends CI_Model {
 		
 		if($this->ID_categoria_video)
 			$this->db->where('ID_categoria_video', $this->ID_categoria_video);
+		if($this->Alias)
+			$this->db->where('Alias', $this->Alias);
 		
 		$this->db->where('cv.Activo', 1);
 		$Q = $this->db->get($this->tabla . ' AS cv');

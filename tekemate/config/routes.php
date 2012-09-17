@@ -43,14 +43,13 @@ $route['404_override'] = '';
 
 $route['asi-somos'] = "tekemate/asi_somos";
 $route['fotografia'] = "tekemate/fotografia";
-$route['fotografia/(:any)'] = "tekemate/fotografia";
+$route['fotografia/(:any)'] = "tekemate/fotografia/$1";
 $route['video'] = "tekemate/video";
-$route['video/(:any)'] = "tekemate/video";
+$route['video/(:any)'] = "tekemate/video/$1";
 $route['video_v'] = "tekemate/video_v";
 $route['video3'] = "tekemate/video3";
 $route['lo-que-hacemos'] = "tekemate/lo_que_hacemos";
 $route['servicios'] = "tekemate/servicios";
-$route['servicio/(:any)'] = "tekemate/servicio";
 $route['contacto'] = "tekemate/contacto";
 
 

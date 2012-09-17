@@ -45,7 +45,6 @@ class Tekemate extends CI_Controller {
 		$tv['keywords'] = 'Producción, realización, contenidos, diusión, audiovisual, video, fotografía, imágenes, herramientas de comunicación, locución, cubrimiento de eventos, medellín, imagen digital';
 		$tv['description'] = 'Creamos contenidos audiovisuales e informativos efectivos, llamativos, innovadores y eficaces, satisfaciendo la necesidad de difusión de todos nuestros clientes.';
 		$tv['content'] = $this->load->view('tekemate/servicios', false, true);
-		$tv['includes'][] = script_tag('js/servicios.js');
 		$this->load->view('template', $tv);
 	}//servicios
 	
@@ -84,119 +83,56 @@ class Tekemate extends CI_Controller {
 		$this->load->view('template', $tv);
 	}//lo_que_hacemos
 	
-	public function fotografia()
+	public function fotografia($cat = '')
 	{
+		$this->load->model(array('mfoto_album', 'mfoto'));
+
+		$albumes = $this->mfoto_album->obtener();
+		if($cat == ''){
+			$cat = $albumes[0]->Alias;
+		}
+		$this->mfoto_album->Alias = $cat;
+		$cate = $this->mfoto_album->obtener_uno();
+		$this->mfoto->ID_foto_album = $cate->ID_foto_album;
+		$fotos = $this->mfoto->obtener();
+
+		$cv['album_actual'] = $cate;
+		$cv['albumes'] = $albumes;
+		$cv['fotos'] = $fotos;
+
 		$tv['title'] = 'Fotografía';
 		$tv['keywords'] = 'fotografía,calidad, moda, retrato, books, catálogos, modelos, actores, deportistas, artistas musicales, producto, alta resolución, digital, publicitaria, arquitectónica, espacios, industrial, comidas, alimentos, bebidas, eventos, medellín';
 		$tv['description'] = 'Ofrecemos una amplia gama de servicios fotográficos con la mejor calidad y diseño en Moda, Retratos, Books, Fotografía Publicitaria, entre otros.';
-		$tv['content'] = $this->load->view('tekemate/fotografia', false, true);
-		$tv['includes'][] = script_tag('js/libs/jquery.jcarousel.min.js');
+		$tv['content'] = $this->load->view('tekemate/fotografia', $cv, true);
 		$tv['includes'][] = script_tag('js/fotografia.js');
 		$this->load->view('template', $tv);
 	}//fotografía
 
-/*	public function video()
-	{
-		$tv['title'] = 'Vídeo';
-		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
-		$tv['description'] = ' Te brindamos la oportunidad de trasmitir por medio de imágenes y audio el sentir de tu compañía con la capacidad de promocionarse por si mismo, con los más altos estándares de calidad y en diferentes formatos.';
-		$tv['content'] = $this->load->view('tekemate/video', false, true);
-		$tv['includes'][] = script_tag('js/video.js');
-		$this->load->view('template', $tv);
-	}//galeria
-	*/
-	public function videoxx()
-	{
-		//Inicializao la petición cURL
-		$c = curl_init('http://vimeo.com/api/v2/tekemate/videos.json'/*'http://gdata.youtube.com/feeds/api/users/tekemateid/uploads?v=2&alt=json'*/);
-		curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-		$datos = curl_exec($c); //Ejecuto la petición
-		curl_close($c);
-		$datos = json_decode($datos);
-		$cv['videos'] = $datos;
-		
-		$tv['title'] = 'Vídeo';
-		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
-		$tv['description'] = ' Te brindamos la oportunidad de trasmitir por medio de imágenes y audio el sentir de tu compañía con la capacidad de promocionarse por si mismo, con los más altos estándares de calidad y en diferentes formatos.';
-		$tv['content'] = $this->load->view('tekemate/video', $cv, true);
-		$tv['includes'][] = script_tag('js/video.js');
-		$this->load->view('template', $tv);
-	}//galeria
-	
-	public function video3()
+	public function video($cat = '')
 	{
 		$this->load->model(array('mcategoria_video', 'mvideo'));
 		
 		$categorias = $this->mcategoria_video->obtener();
-		foreach($categorias as $categoria){
-			$this->mvideo->ID_categoria_video = $categoria->ID_categoria_video;
-			$videos[$categoria->Nombre] = $this->mvideo->obtener();	
+		if($cat == ''){
+			$cat = $categorias[0]->Alias;
 		}
+		$this->mcategoria_video->Alias = $cat;
+		$cate = $this->mcategoria_video->obtener_uno();
+		$this->mvideo->ID_categoria_video = $cate->ID_categoria_video;
+		$videos = $this->mvideo->obtener();
 		
-		$cv['categorias'] = $videos;
-		
-		$tv['title'] = 'Vídeo';
-		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
-		$tv['description'] = ' ¡Sé parte de nuestro equipo! y disfruta de las ventajas que ofrece la producción audiovisual para ti y tu negocio.';
-		$tv['content'] = $this->load->view('tekemate/video3', $cv, true);
-		$tv['includes'][] = script_tag('js/video.js');
-		$this->load->view('template', $tv);
-	}//galeria
-	
-	public function video()
-	{
-		//$this->load->driver('cache');
-		
-		//if (!$final = $this->cache->get('final')){
-		
-			$url_listas = '';
-			$c = curl_init('http://gdata.youtube.com/feeds/api/users/tekemateid/playlists?v=2&alt=json');
-			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-			$datos = curl_exec($c); //Ejecuto la petición
-			curl_close($c);
-			$listas = json_decode($datos);
-			//$listas = _cargar_json($url_listas);
-					
-			$videos = $final = array();
-
-			if($listas != ''){
-				foreach($listas->feed->entry as $l){
-//					print_r($l->{'yt$playlistId'}).'<br />';
-					if($l->{'yt$playlistId'}->{'$t'} != '8A4753C31002A835' || $l->{'yt$playlistId'}->{'$t'} != '280EA9A419A02994'){
-						$c = curl_init($l->content->src.'&alt=json');
-						curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-						$datos = curl_exec($c); //Ejecuto la petición
-						curl_close($c);
-						$videos[] = json_decode($datos);
-						//
-						foreach($videos as $v):
-							 foreach($v->feed->entry as $vi):
-								 $videitos[] = array('title' => $vi->title,
-													 'url' => 'http://www.youtube.com/embed/'.$vi->{'media$group'}->{'yt$videoid'}->{'$t'},
-													 'thumbnail'=>$vi->{'media$group'}->{'media$thumbnail'}[0]);
-							 endforeach;
-						endforeach;
-						$final[] = array('list' => $l->title, 'summary' => $l->summary, 'content' => $videitos);
-					}
-				}
-			}else{
-				$final = array();
-			}
-		
-		
-			 // Save into the cache for 10 minutes
-			// $this->cache->save('final', $final, 600);
-		//}
-		
-		$cv['videos'] = $final;
+		$cv['categoria_actual'] = $cate;
+		$cv['categorias'] = $categorias;
+		$cv['videos'] = $videos;
 		
 		$tv['title'] = 'Vídeo';
 		$tv['keywords'] = 'vídeos, musicales, institucionales, corporativos, argumentales, documentales, comerciales, promos, dirección, realización, producción, eventos, medellín';
-		$tv['description'] = ' Te brindamos la oportunidad de trasmitir por medio de imágenes y audio el sentir de tu compañía con la capacidad de promocionarse por si mismo, con los más altos estándares de calidad y en diferentes formatos.';
+		$tv['description'] = 'Te brindamos la oportunidad de trasmitir por medio de imágenes y audio el sentir de tu compañía con la capacidad de promocionarse por si mismo, con los más altos estándares de calidad y en diferentes formatos.';
 		$tv['content'] = $this->load->view('tekemate/video', $cv, true);
 		$tv['includes'][] = script_tag('js/video.js');
 		$this->load->view('template', $tv);
-	}//galeria
+	}//video
+	
 	
 	public function contacto()
 	{

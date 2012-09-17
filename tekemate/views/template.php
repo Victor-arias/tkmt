@@ -18,7 +18,6 @@ if(!isset($sidebar)) $cols = 'fullpage';
     <meta property="og:url" content="<?php echo current_url();?>" />
     <meta property="og:image" content="<?php echo base_url();?>images/logo_tekemate.png" />
 	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <meta name="viewport" content="width=device-width">
 	<title><?php echo $title; ?> - Tekemate Producción Audiovisual</title>
     <link href="<?php echo base_url();?>styles/style.css" type="text/css" rel="stylesheet" />
     <link href="<?php echo base_url();?>styles/jquery.fancybox-1.3.4.css" type="text/css" rel="stylesheet" />

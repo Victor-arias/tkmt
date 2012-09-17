@@ -9,7 +9,7 @@ Por favor, escribanos si tiene alguna y en la menor brevedad le daremos respuest
 <?php echo form_input('Nombre', '', 'id="Nombre"');?>
 </p>
 <p>
-<?php echo form_label('Corre:o', 'Correo'); ?>
+<?php echo form_label('Correo:', 'Correo'); ?>
 <?php echo form_input('Correo', '', 'id="Correo"');?>
 </p>
 <p>

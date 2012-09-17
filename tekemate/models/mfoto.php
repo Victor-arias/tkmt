@@ -5,9 +5,11 @@ class Mfoto extends CI_Model {
 //PROPIEDADES
 	var $tabla = 'Foto';
 	var $ID_foto;
+	var $ID_foto_album;
 	var $Nombre;
 	var $Foto;
 	var $Thumb;
+	var $Fecha_publicacion;
 	var $Activo;
 
 //MÉTODOS
@@ -28,10 +30,14 @@ class Mfoto extends CI_Model {
  
  	function obtener($cantidad = 100, $desde = 0){
 		
-		if($this->ID_foto) $this->db->where('ID_foto', $this->ID_foto);
-		$this->db->where('Activo', 1)->limit($cantidad,$desde);
+		$this->db->select('f.*, fa.*, fa.Nombre AS Nombre_album, fa.Alias');
+		if($this->ID_foto) $this->db->where('f.ID_foto', $this->ID_foto);
+		if($this->ID_foto_album) $this->db->where('f.ID_foto_album', $this->ID_foto_album);
+		$this->db->where('f.Activo', 1)->limit($cantidad,$desde);
+
+		$this->db->join('Foto_album AS fa', 'fa.ID_foto_album = f.ID_foto_album');
 		
-		$Q = $this->db->get($this->tabla);
+		$Q = $this->db->get($this->tabla . ' AS f');
 		
 		//Si la consulta devuelve 1 o mas resultados
 		if($Q->num_rows() > 0)
@@ -42,7 +48,7 @@ class Mfoto extends CI_Model {
 	}//obtener
 	
 /**
- * Obtiene la información de un foto
+ * Obtiene la información de una foto
  * 
  * @author Victor Arias
  * @access public
@@ -53,6 +59,8 @@ class Mfoto extends CI_Model {
 		
 		if($this->ID_foto)
 			$this->db->where('ID_foto', $this->ID_foto);
+		/*if($this->Alias)
+			$this->db->where('Alias', $this->Alias);*/
 		
 		$this->db->where('Activo', 1);
 		$Q = $this->db->get($this->tabla);
@@ -75,9 +83,11 @@ class Mfoto extends CI_Model {
 
 	function agregar(){
 
-		$datos = array( 'Nombre' 		=> $this->Nombre,
-						'Foto'	 	=> $this->Foto,
+		$datos = array( 'ID_foto_album' => $this->ID_foto_album,
+						'Nombre' 		=> $this->Nombre,
+						'Foto'	 		=> $this->Foto,
 						'Thumb'	 		=> $this->Thumb,
+						'Fecha_publicacion' => $this->Fecha_publicacion,
 						'Activo' 		=> $this->Activo
 					  );
 		
@@ -97,9 +107,11 @@ class Mfoto extends CI_Model {
 
 	function editar(){
 		
+		if($this->ID_foto_album) $this->db->set('ID_foto_album', $this->ID_foto_album);
 		if($this->Nombre) $this->db->set('Nombre', $this->Nombre);
 		if($this->Foto) $this->db->set('Foto', $this->Foto);
 		if($this->Thumb) $this->db->set('Thumb', $this->Thumb);
+		if($this->Fecha_publicacion) $this->db->set('Fecha_publicacion', $this->Fecha_publicacion);
 		if($this->Activo) $this->db->set('Activo', $this->Activo);
 		
 		if($this->ID_foto){ 

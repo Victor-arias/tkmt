@@ -31,7 +31,6 @@ class Mfoto_album extends CI_Model {
 		
 		if($this->ID_foto_album) $this->db->where('ID_foto_album', $this->ID_foto_album);
 		$this->db->where('fa.Activo', 1)->limit($cantidad,$desde);
-		$this->db->order_by('ABS(Orden)', 'ASC');
 		$Q = $this->db->get($this->tabla . ' AS fa');
 		
 		//Si la consulta devuelve 1 o mas resultados
@@ -56,6 +55,8 @@ class Mfoto_album extends CI_Model {
 			$this->db->where('ID_foto_album', $this->ID_foto_album);
 		if($this->Carpeta)
 			$this->db->where('Carpeta', $this->Carpeta);
+		if($this->Alias)
+			$this->db->where('Alias', $this->Alias);
 		
 		$this->db->where('Activo', 1);
 		$Q = $this->db->get($this->tabla);

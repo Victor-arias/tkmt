@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"ID_",
+				"ID_foto"
+			],
+			[
+				"obtener",
+				"obtener_uno"
+			],
+			[
+				"mf",
+				"mfoto_album"
+			],
+			[
+				"ID_fot",
+				"ID_foto_album"
+			],
+			[
+				"ID",
+				"ID_foto_album"
+			],
+			[
+				"obte",
+				"obtener_uno"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"ca",
+				"categorias"
+			],
+			[
 				"i",
 				"italic"
 			],
@@ -19,6 +51,86 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "tekemate/controllers/administracion/fotografia.php",
+			"settings":
+			{
+				"buffer_size": 12970,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/controllers/administracion/video.php",
+			"settings":
+			{
+				"buffer_size": 13537,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/style.css",
+			"settings":
+			{
+				"buffer_size": 18381,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/views/administracion/fotografia/listar.php",
+			"settings":
+			{
+				"buffer_size": 996,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/views/administracion/fotografia/agregar.php",
+			"settings":
+			{
+				"buffer_size": 748,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/models/mfoto.php",
+			"settings":
+			{
+				"buffer_size": 4179,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/views/administracion/fotografia/listar_album.php",
+			"settings":
+			{
+				"buffer_size": 1009,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/views/administracion/template.php",
+			"settings":
+			{
+				"buffer_size": 1484,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/views/administracion/common/footer.php",
+			"settings":
+			{
+				"buffer_size": 168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tekemate/views/administracion/common/nav.php",
+			"settings":
+			{
+				"buffer_size": 2763,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -52,17 +164,51 @@
 	},
 	"file_history":
 	[
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/models/mfoto.php",
+		"/F/Victor/Trabajo/Clientes/Juan Fernando Vasquez/Interllantas/Sitio/interllantas/controllers/administracion/llanta.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/administracion/fotografia/listar_album.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/administracion/fotografia/agregar.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/administracion/fotografia/listar.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/administracion/categoria_video.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/old_views/administracion/template.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/administracion/video.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/administracion/fotografia.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/administracion/video/agregar.php",
+		"/F/Victor/Dropbox/Freelance/Tekemate/Sitio/tekemate/views/administracion/fotografia/agregar.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/old_views/administracion/fotografia/listar.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/old_views/tekemate/fotografia.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/models/mfoto_album.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/old_views/administracion/video/listar.php",
 		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/config/routes.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/tekemate.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/asi-somos.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/styles/style.css",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/nav.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/fotografia.php",
 		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/video.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/servicio.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/contacto.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/styles/style.css",
+		"/F/Victor/Trabajo/Repositorios/tkmt/js/video.js",
+		"/F/Victor/Trabajo/Repositorios/tkmt/js/fotografia.js",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/fotografia.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/tekemate.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/video3.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/video2.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/models/mvideo.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/models/mcategoria_video.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/nav.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/index.html",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/controllers/administracion/servicios.php",
+		"/F/Victor/Dropbox/Freelance/Tekemate/Sitio/tekemate/views/tekemate/galeria.php",
+		"/F/Victor/Dropbox/Freelance/Tekemate/Sitio/tekemate/views/tekemate/fotografia.php",
 		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/template.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/header.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/js/servicios.js",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/social.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/footer.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/sidebar/inicio.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/asi-somos.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/servicios.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/contacto.php",
 		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/inicio.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/.htaccess",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/config/config.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/index.php",
+		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/servicio.php",
 		"/F/Victor/Trabajo/Repositorios/tkmt/js/libs/plugin.scrollbar.js",
 		"/F/Victor/Trabajo/Repositorios/tkmt/js/libs/plugin.scrollbar-min.js",
 		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/tekemate/_fotografia.php",
@@ -70,7 +216,6 @@
 		"/D/Victor/Descargas/free-css-drop-down-menu_v1.3/css/dropdown/dropdown.css",
 		"/D/Victor/Descargas/free-css-drop-down-menu_v1.3/css/helper.css",
 		"/F/Victor/Dropbox/Freelance/Tekua/VergaraVergara/Sitio/configuration.php",
-		"/F/Victor/Trabajo/Repositorios/tkmt/tekemate/views/common/header.php",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/C/Users/Victor/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
@@ -91,6 +236,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"video",
+			"$videos[$i]",
+			"$v[",
+			"');?>'",
+			"class='fancybox' href='<?php echo site_url('servicio/",
 			"taille_englobe",
 			"visible",
 			"height",
@@ -102,6 +252,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"foto",
+			"$video",
+			"$videos[$i][",
+			"\"",
+			"name=\"",
 			"video"
 		],
 		"reverse": false,
@@ -113,8 +268,279 @@
 	"groups":
 	[
 		{
+			"selected": 9,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "tekemate/controllers/administracion/fotografia.php",
+					"settings":
+					{
+						"buffer_size": 12970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6495,
+								6495
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3075.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tekemate/controllers/administracion/video.php",
+					"settings":
+					{
+						"buffer_size": 13537,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12360,
+								12360
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5453.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles/style.css",
+					"settings":
+					{
+						"buffer_size": 18381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5531,
+								5531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1512.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tekemate/views/administracion/fotografia/listar.php",
+					"settings":
+					{
+						"buffer_size": 996,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "tekemate/views/administracion/fotografia/agregar.php",
+					"settings":
+					{
+						"buffer_size": 748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								357,
+								357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "tekemate/models/mfoto.php",
+					"settings":
+					{
+						"buffer_size": 4179,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1535,
+								1535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "tekemate/views/administracion/fotografia/listar_album.php",
+					"settings":
+					{
+						"buffer_size": 1009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								941,
+								941
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "tekemate/views/administracion/template.php",
+					"settings":
+					{
+						"buffer_size": 1484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "tekemate/views/administracion/common/footer.php",
+					"settings":
+					{
+						"buffer_size": 168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "tekemate/views/administracion/common/nav.php",
+					"settings":
+					{
+						"buffer_size": 2763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1362,
+								1362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -174,6 +600,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 184.0,
+	"side_bar_width": 262.0,
 	"status_bar_visible": true
 }
